@@ -1,5 +1,5 @@
 ---
-- name: "Customizing Parrot"
+- name: "Customizing Kali"
   hosts: localhost
   connection: local
   vars:
@@ -7,5 +7,5 @@
   roles:
     - role: "roles/tools-installation"
     - role: "roles/browser-customization"
-    - role: "roles/burpsuite-configuration"
     - role: "roles/system-configuration"
+    - role: "roles/burpsuite-configuration"

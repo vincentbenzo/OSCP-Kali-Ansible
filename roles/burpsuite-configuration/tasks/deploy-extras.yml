@@ -1,4 +1,8 @@
 ---
+- name: TEST
+  ansible.builtin.debug:
+    msg: "user: {{ burpsuite_user }} group: {{ burpsuite_user_details.group }}"
+ 
 - name: Create directory for Burp Suite extras
   ansible.builtin.file:
     path: "{{ burpsuite_extras_dir }}"

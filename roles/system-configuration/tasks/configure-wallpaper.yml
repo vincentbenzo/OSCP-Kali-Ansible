@@ -1,11 +1,13 @@
 ---
-- name: "Copying OLED Black wallpaper"
-  copy:
+- name: Copying OLED Black wallpaper
+  ansible.builtin.copy:
     src: "{{ role_path }}/files/blackoled.jpg"
-    dest: "/usr/share/backgrounds/kali-16x9/"
+    dest: "/usr/share/backgrounds/kali-16x9/blackoled.jpg"
+  become: true
+  become_user: root
 
 - name: Change wallpaper to OLED Black
-  xfconf:
+  community.general.xfconf:
     channel: "xfce4-desktop"
     property: "/backdrop/screen0/monitorVirtual1/workspace0/last-image"
     value_type: "string"
@@ -13,5 +15,3 @@
 
 - name: Change Lock Screen Wallpaper
   shell: ln -s /usr/share/backgrounds/kali-16x9/blackoled.jpg /usr/share/desktop-base/kali-theme/login/background
-  become: true
-  become_user: root
