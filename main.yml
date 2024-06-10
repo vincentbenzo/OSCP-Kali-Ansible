@@ -1,0 +1,11 @@
+---
+- name: "Customizing Parrot"
+  hosts: localhost
+  connection: local
+  vars:
+    - burpsuite_user: root
+  roles:
+    - role: "roles/tools-installation"
+    - role: "roles/browser-customization"
+    - role: "roles/burpsuite-configuration"
+    - role: "roles/system-configuration"
