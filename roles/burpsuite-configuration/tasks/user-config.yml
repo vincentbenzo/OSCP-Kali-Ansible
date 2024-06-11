@@ -3,6 +3,8 @@
   ansible.builtin.stat:
     path: "{{ burpsuite_user_details.home }}/.BurpSuite/UserConfig{{ burpsuite_edition | capitalize }}.json"
   register: burpsuite_user_config_stat
+  become: true
+  become_user: root
 
 # Create basic user config
 - name: Create Burp Suite user config
@@ -13,6 +15,8 @@
     group: "{{ burpsuite_user_details.group }}"
     mode: '0600'
   when: not burpsuite_user_config_stat.stat.exists
+  become: true
+  become_user: root
 
 # Otherwise, update existing user config
 - name: Update jruby path

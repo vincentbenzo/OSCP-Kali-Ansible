@@ -10,6 +10,8 @@
     owner: "{{ burpsuite_user }}"
     group: "{{ burpsuite_user_details.group }}"
     mode: '0755'
+  become: true
+  become_user: root
 
 - name: Download jar files
   ansible.builtin.get_url:
@@ -20,6 +22,8 @@
     group: "{{ burpsuite_user_details.group }}"
     mode: '0640'
   loop: "{{ lookup('dict', burpsuite_extras_jars) }}"
+  become: true
+  become_user: root
 
 - name: Copy autoburp.py script to extras directory
   ansible.builtin.copy:
@@ -28,3 +32,5 @@
     owner: "{{ burpsuite_user }}"
     group: "{{ burpsuite_user_details.group }}"
     mode: '0644'
+  become: true
+  become_user: root

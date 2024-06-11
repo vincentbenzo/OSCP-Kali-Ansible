@@ -11,6 +11,8 @@
     src: "{{ burpsuite_install_dir }}/.install4j/i4jparams.conf"
   register: install4j_config_contents
   when: install_config_stat.stat.exists
+  become: true
+  become_user: root
 
 - name: Get installed version
   ansible.builtin.set_fact:

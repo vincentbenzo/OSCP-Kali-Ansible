@@ -13,5 +13,10 @@
     value_type: "string"
     value: "blackoled.jpg"
 
-- name: Change Lock Screen Wallpaper
-  shell: ln -s /usr/share/backgrounds/kali-16x9/blackoled.jpg /usr/share/desktop-base/kali-theme/login/background
+- name: Change Lock Screen by creating a symbolic link
+  ansible.builtin.file:
+    src: "/usr/share/backgrounds/kali-16x9/blackoled.jpg"
+    dest: "/usr/share/desktop-base/kali-theme/login/background" 
+    state: link
+  become: true
+  become_user: root
