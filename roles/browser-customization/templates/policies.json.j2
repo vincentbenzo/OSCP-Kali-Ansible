@@ -9,7 +9,7 @@
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
     "Homepage": {
-      "URL": "https://start.parrotsec.org",
+      "URL": "https://google.com",
       "Locked": false,
       "StartPage": "homepage"
     },
@@ -50,6 +50,11 @@
         "https://addons.mozilla.org/firefox/downloads/latest/{{ item }}/latest.xpi"{{ "," if not loop.last }}
 {% endfor %}
       ]
+    },
+    "ExtensionSettings": {
+      "*": {
+        "default_area": "navbar"
+      }
     },
     "FirefoxHome": {
       "Search": true,
