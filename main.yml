@@ -2,10 +2,8 @@
 - name: "Customizing Kali"
   hosts: localhost
   connection: local
-  vars:
-    - burpsuite_user: root
   roles:
     - role: "roles/tools-installation"
     - role: "roles/browser-customization"
     - role: "roles/system-configuration"
-    - role: "roles/burpsuite-configuration"
+    - role: "roles/tmux-configuration"
