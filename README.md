@@ -10,7 +10,7 @@ ajouter Alt+Shift+space pareil pour windows
 
 Add ssh server
 
-NERDfont
+NERDfont +  Iosevka
 
 catpuccino
 
