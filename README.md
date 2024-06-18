@@ -10,4 +10,8 @@ ajouter Alt+Shift+space pareil pour windows
 
 Add ssh server
 
+NERDfont
+
+catpuccino
+
 enlever Alt+Space in use in Kali
