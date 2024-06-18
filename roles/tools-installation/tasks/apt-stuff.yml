@@ -24,6 +24,7 @@
       - evil-winrm
       - flameshot
       - exiftool
+      - openssh-server
     state: latest
   become: true
   become_method: sudo
