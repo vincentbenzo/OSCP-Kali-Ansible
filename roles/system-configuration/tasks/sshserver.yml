@@ -1,0 +1,14 @@
+---
+- name: "Installing Openssh-server"
+  package:
+    name:
+      - openssh-server
+    state: latest
+  become: true
+  become_method: sudo
+
+- name: "Start and enable Openssh-server"
+  ansible.builtin.systemd_service:
+    name: ssh
+    state: started
+    enabled: true
