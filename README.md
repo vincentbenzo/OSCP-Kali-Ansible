@@ -8,8 +8,6 @@ ajouter Alt+Space equivalent de suivant pour pane
 
 ajouter Alt+Shift+space pareil pour windows
 
-Add ssh server
-
 NERDfont +  Iosevka
 
 catpuccino
