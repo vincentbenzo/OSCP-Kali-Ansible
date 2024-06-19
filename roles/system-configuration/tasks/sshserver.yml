@@ -12,3 +12,5 @@
     name: ssh
     state: started
     enabled: true
+  become: true
+  become_user: root
