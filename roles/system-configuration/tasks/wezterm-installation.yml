@@ -25,11 +25,6 @@ vars:
   file:
     path: "{{ wezterm-config | dirname }}"
     state: directory
-        
-- name: "Copying Catpuccin OLED theme to wezterm"
-  copy:
-    src: "{{ role_path }}/files/wezterm.lua"
-    dest: "{{ wezterm-config }}"
 
 - name: "Install Ioveska Font:
   ansible.builtin.shell:
@@ -38,3 +33,8 @@ vars:
   && sudo dpkg -i fonts-iosevka.deb \
   && rm fonts-iosevka.deb \
   && sudo fc-cache -fv
+          
+- name: "Copying wezterm conf"
+  copy:
+    src: "{{ role_path }}/files/wezterm.lua"
+    dest: "{{ wezterm-config }}"
