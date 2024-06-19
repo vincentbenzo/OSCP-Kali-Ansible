@@ -1,2 +1,2 @@
 ---
-# vars file for configure-system
+wezterm-config: "{{ ansible_env.HOME }}/.config/wezterm/wezterm.lua"
