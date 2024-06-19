@@ -6,12 +6,18 @@
   become: true
   become_user: root
 
+- name: "Get the file location for all workspaces background"
+  ansible.builtin.shell:
+    cmd: xfconf-query -c xfce4-desktop -l | grep last-image
+  register: backgroundfiles-list
+
 - name: Change wallpaper to OLED Black
   community.general.xfconf:
     channel: "xfce4-desktop"
-    property: "/backdrop/screen0/monitorVirtual1/workspace0/last-image"
+    property: "{{ items }}"
     value_type: "string"
     value: "/usr/share/backgrounds/kali-16x9/black.png"
+  loop: {{ backgroundfiles-list.splitlines() }}
 
 - name: Change Lock Screen by creating a symbolic link
   ansible.builtin.file:
