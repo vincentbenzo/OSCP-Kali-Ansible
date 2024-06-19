@@ -26,7 +26,7 @@ vars:
     path: "{{ wezterm-config | dirname }}"
     state: directory
 
-- name: "Install Ioveska Font:
+- name: "Install Ioveska Font"
   ansible.builtin.shell:
     cmd: wget -O fonts-iosevka.deb \
   https://sid.ethz.ch/debian/fonts-iosevka/fonts-iosevka_22.0.0%2Bds-1_all.deb \
