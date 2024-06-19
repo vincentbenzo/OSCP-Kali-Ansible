@@ -1,2 +1,2 @@
 ---
-wezterm-config: "{{ ansible_env.HOME }}/.config/wezterm/wezterm.lua"
+weztermconfig: "{{ ansible_env.HOME }}/.config/wezterm/wezterm.lua"
