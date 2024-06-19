@@ -30,3 +30,11 @@ vars:
   copy:
     src: "{{ role_path }}/files/wezterm.lua"
     dest: "{{ wezterm-config }}"
+
+- name: "Install Ioveska Font:
+  ansible.builtin.shell:
+    cmd: wget -O fonts-iosevka.deb \
+  https://sid.ethz.ch/debian/fonts-iosevka/fonts-iosevka_22.0.0%2Bds-1_all.deb \
+  && sudo dpkg -i fonts-iosevka.deb \
+  && rm fonts-iosevka.deb \
+  && sudo fc-cache -fv
