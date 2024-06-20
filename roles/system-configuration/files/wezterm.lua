@@ -11,5 +11,8 @@ return {
     ["OLEDppuccin"] = custom,
   },
   color_scheme = "OLEDppuccin",
-  font = wezterm.font('Iosevka')
+  font = wezterm.font(
+    'Iosevka Extended',
+    { weight = 'DemiBold' }
+   )
 }
