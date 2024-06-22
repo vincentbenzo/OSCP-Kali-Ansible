@@ -23,6 +23,7 @@
       - pipx
       - evil-winrm
       - flameshot
+      - fzf
       - exiftool
     state: latest
   become: true
