@@ -1,10 +1,8 @@
 ---
-- name: "add pgp key for wezterm apt repository"
-  ansible.builtin.get_url:
-    url: "https://apt.fury.io/wez/gpg.key"
-    dest: "/usr/share/keyrings/wezterm-fury.asc"
-  become: true
-  become_method: sudo
+- name: "download catpuccin/zsh repository"
+  ansible.builtin.git:
+    url: "https://github.com/catppuccin/zsh-syntax-highlighting.git"
+    dest: "{{ ansible_env.HOME }}/zsh-catppuccin/"
         
 - name: "Add Wezterm repository"
   ansible.builtin.copy:
