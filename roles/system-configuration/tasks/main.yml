@@ -2,3 +2,4 @@
 - include_tasks: "configure-wallpaper.yml"
 - include_tasks: "sshserver.yml"
 - include_tasks: "wezterm-installation.yml"
+- include_tasks: "zsh-configuration.yml"
