@@ -1,0 +1,37 @@
+---
+- name: "add pgp key for wezterm apt repository"
+  ansible.builtin.get_url:
+    url: "https://apt.fury.io/wez/gpg.key"
+    dest: "/usr/share/keyrings/wezterm-fury.asc"
+  become: true
+  become_method: sudo
+        
+- name: "Add Wezterm repository"
+  ansible.builtin.copy:
+    src: "{{ role_path }}/files/wezterm.list"
+    dest: "/etc/apt/sources.list.d/wezterm.list"
+  become: true
+  become_method: sudo
+
+- name: "Installing Wezterm"
+  package:
+    name:
+      - wezterm
+    state: latest
+    update_cache: yes
+  become: true
+  become_method: sudo
+
+- name: "Make sure wezterm config dir exists"
+  file:
+    path: "{{ weztermconfig | dirname }}"
+    state: directory
+
+- name: "Install Ioveska Font"
+  ansible.builtin.shell: |
+    wget -O fonts-iosevka.deb http://sid.ethz.ch/debian/fonts-iosevka/fonts-iosevka_22.0.0%2Bds-1_all.deb && sudo dpkg -i fonts-iosevka.deb && rm fonts-iosevka.deb && sudo fc-cache -fv
+          
+- name: "Copying wezterm conf"
+  copy:
+    src: "{{ role_path }}/files/wezterm.lua"
+    dest: "{{ weztermconfig }}"
