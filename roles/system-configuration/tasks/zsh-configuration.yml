@@ -4,10 +4,10 @@
     src: "{{ role_path }}/files/dotzshrc"
     dest: "{{ ansible_env.HOME }}/.zshrc"
 
-- name: "Install interactive cheat sheet tool Navi:
+- name: "Install interactive cheat sheet tool Navi"
   ansible.builtin.shell: |
     bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts/install)
 
-- name: "Addd cheatsheets to Navi:
+- name: "Addd cheatsheets to Navi"
   ansible.builtin.shell: |
     navi repo add https://github.com/denisidoro/cheats
