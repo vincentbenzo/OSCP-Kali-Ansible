@@ -8,6 +8,6 @@
   ansible.builtin.shell: |
     bash -c "bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts/install)"
 
-- name: "Addd cheatsheets to Navi"
+- name: "Add cheatsheets to Navi"
   ansible.builtin.shell: |
     {{ ansible_env.HOME }}/.cargo/bin/navi repo add https://github.com/denisidoro/cheats
