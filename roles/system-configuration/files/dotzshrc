@@ -114,7 +114,7 @@ configure_prompt() {
 }
 
 # Use Navi as widget in zsh
-eval "$(navi widget zsh)"
+eval "$(~/.cargo/bin/navi widget zsh)"
 
 # The following block is surrounded by two delimiters.
 # These delimiters must not be modified. Thanks.
