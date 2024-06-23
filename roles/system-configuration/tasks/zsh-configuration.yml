@@ -6,8 +6,10 @@
 
 - name: "Install interactive cheat sheet tool Navi"
   ansible.builtin.shell: |
-    bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts/install)
+    bach -c "bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts/install) && source"
 
 - name: "Addd cheatsheets to Navi"
   ansible.builtin.shell: |
-    navi repo add https://github.com/denisidoro/cheats
+    source {{ ansible_env.HOME  }} && navi repo add https://github.com/denisidoro/cheats
+  args: 
+    executable: /bin/bash
