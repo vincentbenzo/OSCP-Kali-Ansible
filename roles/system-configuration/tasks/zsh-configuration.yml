@@ -11,5 +11,3 @@
 - name: "Addd cheatsheets to Navi"
   ansible.builtin.shell: |
     {{ ansible_env.HOME }}/.cargo/bin/navi repo add https://github.com/denisidoro/cheats
-  args: 
-    executable: /bin/zsh
