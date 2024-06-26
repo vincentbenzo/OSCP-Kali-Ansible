@@ -7,3 +7,4 @@
     - role: "roles/browser-customization"
     - role: "roles/system-configuration"
     - role: "roles/tmux-configuration"
+    - role: "roles/vscode-installation"
