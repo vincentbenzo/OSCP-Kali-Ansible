@@ -27,7 +27,13 @@
     path: "{{ weztermconfig | dirname }}"
     state: directory
 
+- name: Check if Ioveska already installed
+  shell: "ls /usr/share/fonts/truetype/iosevka/iosevka*"
+  register: ioveska_exists
+  ignore_errors: yes
+
 - name: "Install Ioveska Font"
+  when: ioveska_exists is failed
   ansible.builtin.shell: |
     wget -O fonts-iosevka.deb http://sid.ethz.ch/debian/fonts-iosevka/fonts-iosevka_22.0.0%2Bds-1_all.deb && sudo dpkg -i fonts-iosevka.deb && rm fonts-iosevka.deb && sudo fc-cache -fv
           
