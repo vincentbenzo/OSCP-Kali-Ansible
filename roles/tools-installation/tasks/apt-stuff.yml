@@ -20,6 +20,8 @@
       - rlwrap
       - feroxbuster
       - ffuf
+      - ligolo-ng
+      - fcrackzip
       - pipx
       - evil-winrm
       - flameshot
