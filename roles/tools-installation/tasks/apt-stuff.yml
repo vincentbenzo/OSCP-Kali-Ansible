@@ -12,21 +12,21 @@
 - name: "Installing Packages"
   package:
     name:
-      - gobuster
-      - golang
       - autorecon
-      - tmux
-      - ncat
-      - rlwrap
+      - evil-winrm
+      - exiftool
+      - fcrackzip
       - feroxbuster
       - ffuf
-      - ligolo-ng
-      - fcrackzip
-      - pipx
-      - evil-winrm
       - flameshot
       - fzf
-      - exiftool
+      - gobuster
+      - golang
+      - ligolo-ng
+      - ncat
+      - pipx
+      - rlwrap
+      - tmux
     state: latest
   become: true
   become_method: sudo
