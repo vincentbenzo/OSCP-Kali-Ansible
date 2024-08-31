@@ -13,20 +13,39 @@
   package:
     name:
       - autorecon
+      - curl # check Requirement for Autorecon
+      - dnsrecon # check Requirement for Autorecon
+      - enum4linux # check Requirement for Autorecon
       - evil-winrm
       - exiftool
       - fcrackzip
-      - feroxbuster
+      - feroxbuster # check Requirement for Autorecon
       - ffuf
       - flameshot
       - fzf
-      - gobuster
+      - gobuster # check Requirement for Autorecon
       - golang
+      - impacket-scripts # check Requirement for Autorecon
       - ligolo-ng
+      - nbtscan # check Requirement for Autorecon
       - ncat
+      - nikto # check Requirement for Autorecon
+      - nmap # check Requirement for Autorecon
+      - onesixtyone # check Requirement for Autorecon
+      - oscanner # check Requirement for Autorecon
       - pipx
+      - redis-tools # check Requirement for Autorecon
       - rlwrap
+      - seclists
+      - smbclient # check Requirement for Autorecon
+      - smbmap # check Requirement for Autorecon
+      - snmpwalk # check Requirement for Autorecon
+      - sslscan # check Requirement for Autorecon
+      - svwar # check Requirement for Autorecon
       - tmux
+      - tnscmd10g # check Requirement for Autorecon
+      - whatweb # check Requirement for Autorecon
+      - wkhtmlopdf # check Requirement for Autorecon
     state: latest
   become: true
   become_method: sudo
