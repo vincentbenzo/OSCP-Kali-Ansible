@@ -3,3 +3,4 @@
 - include_tasks: "sshserver.yml"
 - include_tasks: "wezterm-installation.yml"
 - include_tasks: "zsh-configuration.yml"
+- include_tasks: "unarchiving-files.yml"
