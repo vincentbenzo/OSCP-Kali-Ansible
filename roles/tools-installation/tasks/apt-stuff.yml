@@ -46,7 +46,7 @@
       - tmux
       - tnscmd10g # check Requirement for Autorecon
       - whatweb # check Requirement for Autorecon
-      - wkhtmlopdf # check Requirement for Autorecon
+      - wkhtmltopdf # check Requirement for Autorecon
     state: latest
   become: true
   become_method: sudo
