@@ -40,7 +40,7 @@
       - seclists
       - smbclient # check Requirement for Autorecon
       - smbmap # check Requirement for Autorecon
-      - snmpwalk # check Requirement for Autorecon
+      - snmp # check Requirement for Autorecon
       - sslscan # check Requirement for Autorecon
       - svwar # check Requirement for Autorecon
       - tmux
