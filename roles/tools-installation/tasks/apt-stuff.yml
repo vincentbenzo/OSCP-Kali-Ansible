@@ -42,7 +42,7 @@
       - smbmap # check Requirement for Autorecon
       - snmp # check Requirement for Autorecon
       - sslscan # check Requirement for Autorecon
-      - svwar # check Requirement for Autorecon
+      - sipvicious # check Requirement for Autorecon
       - tmux
       - tnscmd10g # check Requirement for Autorecon
       - whatweb # check Requirement for Autorecon
