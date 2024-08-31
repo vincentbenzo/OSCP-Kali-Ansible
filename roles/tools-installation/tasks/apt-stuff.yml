@@ -26,6 +26,7 @@
       - gobuster # check Requirement for Autorecon
       - golang
       - impacket-scripts # check Requirement for Autorecon
+      - inkscape
       - ligolo-ng
       - nbtscan # check Requirement for Autorecon
       - ncat
