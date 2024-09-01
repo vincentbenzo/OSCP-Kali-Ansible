@@ -8,8 +8,3 @@
     - role: "roles/system-configuration"
     - role: "roles/tmux-configuration"
     - role: "roles/vscode-installation"
-      users:
-        - username: kali
-          visual_studio_code_extensions:
-            - patmood.rich-markdown-editor
-            - donjayamanne.git-extension-pack
