@@ -4,3 +4,4 @@
 - include_tasks: "wezterm-installation.yml"
 - include_tasks: "zsh-configuration.yml"
 - include_tasks: "unarchiving-files.yml"
+- include_tasks: "add-ultrawide-screen-resolution.yml"
