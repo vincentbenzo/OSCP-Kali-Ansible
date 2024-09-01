@@ -8,4 +8,4 @@
   ansible.builtin.file:
     path: /usr/share/wordlists/rockyou.txt.gz
     state: absent
-    become: true
+  ecome: true
