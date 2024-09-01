@@ -1,7 +1,7 @@
 ---
 - name: "Unarchiving rockyou.txt.gz"
   ansible.builtin.shell:
-    cmd: 7z x /usr/share/wordlists/rockyou.txt.gz
+    cmd: 7z x /usr/share/wordlists/rockyou.txt.gz -o/usr/share/wordlists/
   become: true
 
 - name: "Delete rockyou.txt.gz"
