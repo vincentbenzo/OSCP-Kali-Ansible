@@ -45,6 +45,7 @@
       - sipvicious # check Requirement for Autorecon
       - tmux
       - tnscmd10g # check Requirement for Autorecon
+      - unzip
       - whatweb # check Requirement for Autorecon
       - wkhtmltopdf # check Requirement for Autorecon
     state: latest
