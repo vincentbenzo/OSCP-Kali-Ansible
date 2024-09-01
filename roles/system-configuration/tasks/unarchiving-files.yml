@@ -2,7 +2,7 @@
 - name: "Unarchiving rockyou.txt.gz"
   ansible.builtin.unarchive:
     src: /usr/share/wordlists/rockyou.txt.gz
-    dest:  /usr/share/wordlists/rockyou.txt
+    dest:  /usr/share/wordlists/
 
 - name: "Delete rockyou.txt.gz"
   ansible.builtin.file:
