@@ -8,3 +8,9 @@
     - role: "roles/system-configuration"
     - role: "roles/tmux-configuration"
     - role: "roles/vscode-installation"
+      users:
+        - username: kali
+          visual_studio_code_extensions:
+            - streetsidesoftware.code-spell-checker
+            - wholroyd.jinja
+            - ms-python.python
