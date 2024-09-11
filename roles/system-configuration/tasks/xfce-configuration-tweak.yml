@@ -1,1 +1,4 @@
-
+---
+- name: "Show hidden files in XFCE"
+  ansible.builtin.shell:
+    cmd: xfconf-query --channel thunar --property /last-show-hidden --create --type bool --set true
