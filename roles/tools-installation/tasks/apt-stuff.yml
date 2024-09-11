@@ -27,6 +27,7 @@
       - golang
       - impacket-scripts # check Requirement for Autorecon
       - inkscape
+      - mingw-w64
       - nbtscan # check Requirement for Autorecon
       - ncat
       - nikto # check Requirement for Autorecon
