@@ -35,6 +35,8 @@
       - onesixtyone # check Requirement for Autorecon
       - oscanner # check Requirement for Autorecon
       - pipx
+      - remmina
+      - rdesktop
       - redis-tools # check Requirement for Autorecon
       - rlwrap
       - seclists
