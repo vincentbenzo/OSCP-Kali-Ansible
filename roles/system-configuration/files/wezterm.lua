@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 
-config.scrollback_lines = 3500
+config.scrollback_lines = 10000
 
 local custom = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
 custom.background = "#000000"
