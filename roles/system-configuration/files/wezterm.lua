@@ -1,7 +1,5 @@
 local wezterm = require("wezterm")
 
-config.scrollback_lines = 10000
-
 local custom = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
 custom.background = "#000000"
 custom.tab_bar.background = "#040404"
@@ -16,5 +14,6 @@ return {
   font = wezterm.font(
     'Iosevka Extended',
     { weight = 'DemiBold' }
-   )
+   ),
+  config.scrollback_lines = 10000
 }
