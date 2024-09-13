@@ -4,6 +4,3 @@
     src: "{{ role_path }}/files/10-monitor.conf"
     dest: "/etc/X11/xorg.conf.d/10-monitor.conf"
   become: true
-
-- name: Reboot the machine to apply the new configuration
-  ansible.builtin.reboot:
