@@ -1,0 +1,4 @@
+---
+- name: "Add shortcut to open flameshot"
+  ansible.builtin.shell:
+    cmd: xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Print" -s "/usr/bin/flameshot gui"
