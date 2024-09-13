@@ -5,3 +5,4 @@
 - include_tasks: "zsh-configuration.yml"
 - include_tasks: "unarchiving-files.yml"
 - include_tasks: "add-ultrawide-screen-resolution.yml"
+- include_tasks: "custom-shortcuts.yml"
