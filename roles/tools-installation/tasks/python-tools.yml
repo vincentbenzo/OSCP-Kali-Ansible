@@ -8,4 +8,5 @@
     - { name: 'crackmapexec', url: 'git+https://github.com/Porchetta-Industries/CrackMapExec.git' }
     - { name: 'certipy-ad', url: 'git+https://github.com/ly4k/Certipy.git' }
     - { name: 'netexec', url: 'git+https://github.com/Pennyw0rth/NetExec' }
-    - { name: 'AutoRecon', url: 'git+https://github.com/Tib3rius/AutoRecon.git' } 
+    - { name: 'AutoRecon', url: 'git+https://github.com/Tib3rius/AutoRecon.git' }
+    - { name: 'pwncat-cs', url: 'git+https://github.com/calebstewart/pwncat.git' }
