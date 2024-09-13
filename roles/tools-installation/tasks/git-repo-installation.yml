@@ -10,8 +10,10 @@
     repo: https://github.com/nicocha30/ligolo-ng.git
     dest: /usr/share/toolbox/ligolo
     version: v0.6.2
+  become: true
 
 - name: Clone sysinternals Git Repository
   git:
     repo: https://github.com/davehardy20/sysinternals.git
     dest: /usr/share/toolbox/sysinternals
+  become: true
