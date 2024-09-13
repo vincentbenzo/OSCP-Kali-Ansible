@@ -1,3 +1,4 @@
 ---
-- name: Reboot the machine to apply the new configuration
+- name: Reboot machine to apply the new configuration
   ansible.builtin.reboot:
+    msg: "Reboot machine to apply the new configuration"
