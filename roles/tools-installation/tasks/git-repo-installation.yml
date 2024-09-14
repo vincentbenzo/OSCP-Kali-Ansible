@@ -7,13 +7,13 @@
 
 - name: Clone Ligolo Git Repository v0.6.2
   ansible.builtin.get_url:
-    url: "{{ item }}"
+    url: "https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/{{ item }}"
     dest: /usr/share/toolbox/ligolo
-  loop:
-    - https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/ligolo-ng_agent_0.6.2_linux_amd64.tar.gz
-    - https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/ligolo-ng_agent_0.6.2_windows_amd64.zip
-    - https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/ligolo-ng_proxy_0.6.2_linux_amd64.tar.gz
-    - https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/ligolo-ng_proxy_0.6.2_windows_amd64.zip
+  with_items:
+    - ligolo-ng_agent_0.6.2_linux_amd64.tar.gz
+    - ligolo-ng_agent_0.6.2_windows_amd64.zip
+    - ligolo-ng_proxy_0.6.2_linux_amd64.tar.gz
+    - ligolo-ng_proxy_0.6.2_windows_amd64.zip
   become: true
 
 - name: Clone sysinternals Git Repository
