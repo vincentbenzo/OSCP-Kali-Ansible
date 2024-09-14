@@ -15,5 +15,5 @@ return {
     'Iosevka Extended',
     { weight = 'DemiBold' }
    ),
-  config.scrollback_lines = 10000
+  scrollback_lines = 10000
 }
