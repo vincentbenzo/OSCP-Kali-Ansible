@@ -7,7 +7,7 @@
     - role: "roles/browser-customization"
     - role: "roles/system-configuration"
     - role: "roles/tmux-configuration"
-    - role: gantsign.visual-studio-code
+    - role: "roles/vscode-installation"
       users:
         - username: kali
           visual_studio_code_extensions:
