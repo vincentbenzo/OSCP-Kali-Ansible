@@ -7,10 +7,11 @@
     - role: "roles/browser-customization"
     - role: "roles/system-configuration"
     - role: "roles/tmux-configuration"
-    - role: "roles/vscode-installation"
+    - role: gantsign.visual-studio-code
       users:
         - username: kali
           visual_studio_code_extensions:
             - streetsidesoftware.code-spell-checker
             - wholroyd.jinja
             - ms-python.python
+          visual_studio_code_settings_overwrite: true
